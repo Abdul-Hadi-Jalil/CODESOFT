@@ -9,7 +9,7 @@ class Task:
         self.completed = True
 
     def __str__(self):
-        return f"{self.title} (Due: {self.due_date})"
+        return f"Title: {self.title}\nDescription: {self.description}\nDue: {self.due_date}"
 
 
 class Category:
@@ -24,7 +24,7 @@ class Category:
         self.tasks.remove(task)
 
     def __str__(self):
-        return self.name
+        return f"Category Name: {self.name}\nNumber of tasks in {self.name}: {self.tasks}"
 
 
 class ToDoApp:
