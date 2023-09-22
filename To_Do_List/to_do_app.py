@@ -24,7 +24,7 @@ class Category:
         self.tasks.remove(task)
 
     def __str__(self):
-        return f"Category Name: {self.name}\nNumber of tasks in {self.name}: {self.tasks}"
+        return f"Category Name: {self.name}\nNumber of tasks in {self.name}: {len(self.tasks)}"
 
 
 class ToDoApp:
